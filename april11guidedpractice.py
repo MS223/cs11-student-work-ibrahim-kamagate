@@ -18,10 +18,10 @@ return_only(7)
 print "printing print_only ..."# adding print mkes it also print none
 print print_only(7)
 
-print "printing return_only ..."
+print "printing return_only ..."#it only print whats n the quotes
 return_only(7)
 
-print "using print_only ..."
+print "using print_only ..."#you can't add those two numbers
 print_only(7) + 6
 
 print "using return_only ..."
