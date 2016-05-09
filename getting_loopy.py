@@ -1,9 +1,13 @@
-fruit_list = input("Give me a fruit")
+fruit = raw_input("Give me a fruit").split(',')
+print fruit
+
+#float_fruit = []
 def fruit_pluralizer(list_of_strings):
-    for x in fruit_pluralizer():
-        if fruit_list[len(fruit_list)-1] == y:
-            fruit_list[:len(fruit_list-1)] + 'ies'
-            print fruit_list
+    for x in list_of_strings:
+        if x[len(x)-1] == "y":
+            print x[:len(x)-1] + 'ies'
+            # print fruit_list
         else:
-            fruit_list[:len(fruit_list)] + 's'
-            print fruit_list
+            print x[:len(x)] + 's'
+            # print fruit_list
+fruit_pluralizer(fruit)
