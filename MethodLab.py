@@ -8,14 +8,13 @@ class Time(object):
         return str(self.hour) + ":" + str(self.minute) + ":" + str(self.second)
 
     def __add__(self, other):
-        return str(self.hour+other.hour) + ":" + str(self.minute+other.minute) + ":" + str(self.second+other.second)
+        # return str(self.hour+other.hour) + ":" + str(self.minute+other.minute) + ":" + str(self.second+other.second)
 #I had to use the self and other which is time 1 and time 2
-
+         return Time(self.hour+other.hour, self.minute+other.minute, self.second+other.second)
 time1 = Time(5, 32, 0)
 time2 = Time(23, 11, 11)
 time3 = Time(7, 14, 28)
 print time1
 print time2
-print time3
-print time1 + time2
-print time2 + time3
+
+print time1 + time2 + time3
